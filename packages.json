@@ -1,0 +1,7 @@
+{
+  "name":          "webmail-renderer",
+  "version":       "1.0",
+  "dependencies":  {
+    "webdriverio":  "*"
+  }
+}

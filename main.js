@@ -38,7 +38,7 @@ webdriverio
     .setValue ('input[type="password"]', pwd)
     .click ('#signIn')
 	.waitFor('input[aria-label="Search"]',20000)
-	.click('#:3w')
+	.click('#:3y')
 	.waitFor('img[alt="In new window"]',10000)
 	.saveScreenshot(filepath1)
 	.element('<body>').keys(['Control','t'])

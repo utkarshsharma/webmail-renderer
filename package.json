@@ -2,6 +2,7 @@
   "name":          "webmail-renderer",
   "private": "true",
   "dependencies":  {
-    "webdriverio":  "*"
+    "webdriverio":  "*",
+    "nodemailer" : "*"
   }
 }

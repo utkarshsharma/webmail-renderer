@@ -1,0 +1,5 @@
+{
+        "subject": "Renderer Testing",
+        "htmlmessage": "<h1>This</h2> <p><b>message</b> <i>is</i> a <u> test message</u>.",
+        "textmessage": "This message is a text message"
+}

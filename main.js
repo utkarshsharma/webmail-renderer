@@ -16,6 +16,36 @@ var obj = JSON.parse(content);
 var usr = obj.username
 var pwd = obj.password
 
+var credentials = fs.readFileSync('send_credentials.json');
+var sender = JSON.parse(credentials);
+var usr_send = sender.username
+var pwd_send = sender.password
+
+usr_send = usr_send + '@gmail.com'
+
+var data = fs.readFileSync('htmlEmail.json')
+var Email = JSON.parse(data)
+var subj = Email.subject
+var htmlEmail = Email.htmlmessage
+var textEmail = Email.textmessage
+
+
+var nodemailer = require('nodemailer');
+var transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+        user: usr_send,
+        pass: pwd_send
+    }
+});
+transporter.sendMail({
+    from: usr_send,
+    to: usr + '@gmail.com',
+    subject: subj,
+    text: textEmail,
+    html: htmlEmail
+});
+
 var filepath1 = homedir + '/gmailscreenshot'
 var filepath2 = 'file://' + homedir + '/gmailscreenshot'
 
@@ -38,7 +68,10 @@ webdriverio
     .setValue ('input[type="password"]', pwd)
     .click ('#signIn')
 	.waitFor('input[aria-label="Search"]',20000)
-	.click('#:3w')
+	setValue('input[id="gbqfq"]', usr_send)
+	.click('#gbqfb')
+	.waitFor('input[aria-label="Search"]',20000)
+	.element('<body>').keys(['Down arrow','Enter'])
 	.waitFor('img[alt="In new window"]',10000)
 	.saveScreenshot(filepath1)
 	.element('<body>').keys(['Control','t'])

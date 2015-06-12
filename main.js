@@ -68,7 +68,7 @@ webdriverio
     .setValue ('input[type="password"]', pwd)
     .click ('#signIn')
 	.waitFor('input[aria-label="Search"]',20000)
-	setValue('input[id="gbqfq"]', usr_send)
+	.setValue('input[id="gbqfq"]', usr_send)
 	.click('#gbqfb')
 	.waitFor('input[aria-label="Search"]',20000)
 	.element('<body>').keys(['Down arrow','Enter'])

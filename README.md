@@ -1,4 +1,6 @@
 # webmail-renderer
+
+```
 ## Download the code
 $ git clone https://github.com/utkarshsharma/webmail-renderer
 
@@ -7,8 +9,11 @@ $ curl -O http://selenium-release.storage.googleapis.com/2.45/selenium-server-st
 
 $ cd webmail-renderer
 $ npm install                         ##this will install webdriverio in your computer
+
 ## Create a config file
 $ cp config.json.template config.json
 $ vi config.json   (<== Put in gmail credentials ==>)
+
 ## Run the renderer
 $ nodejs main.js
+```

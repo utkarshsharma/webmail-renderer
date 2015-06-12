@@ -14,6 +14,10 @@ $ npm install                         ##this will install webdriverio in your co
 $ cp config.json.template config.json
 $ vi config.json   (<== Put in gmail credentials ==>)
 
+## Enter Sending Credentials (These credentials should be of a gmail account with reduced security. "Allow Less Secure Apps" should be ON
+$ cp send_credentials.json.template
+$ vi send_credentials.json   (<== Put in gmail credentials of the sender account ==>)
+
 ## Run the renderer
 $ nodejs main.js
 ```

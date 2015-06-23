@@ -1,4 +1,7 @@
 {
-        "username": "myusername",
-        "password": "mypassword"
+	"url"		:"http://localhost/htmlEmail.json",
+	"sender"	:{"username":"myusername","password":"mypassword"},	
+	"receivers" :{	"gmail":	{"username": "myotherusername","password": "myotherpassword"},
+					"yahoo":	{"username": "myyahoousername@yahoo.com","password": "myyahoopassword"}
+	}
 }

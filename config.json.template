@@ -1,5 +1,6 @@
 {
-	"url"		:"http://localhost/htmlEmail.json",
+	"prevemURL"		:"http://localhost:3000",
+	"prevemCredentials"	:{"email": "renderers@prevem.prevem", "password": "RendererIsHere"},
 	"sender"	:{"username":"myusername","password":"mypassword"},	
 	"receivers" :{	"gmail":	{"username": "myotherusername","password": "myotherpassword"},
 					"yahoo":	{"username": "myyahoousername@yahoo.com","password": "myyahoopassword"}
